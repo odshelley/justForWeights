@@ -355,8 +355,8 @@ def evaluate_loss(ts, batch_size, dataloader, generator, discriminator):
 def load_weights(
     generator,
     discriminator,
-    generator_path="../old_code/weights/best_generator_1.pth",
-    discriminator_path="../old_code/weights/best_discriminator_1.pth",
+    generator_path="best_generator_200.pth",
+    discriminator_path="best_discriminator_kidger_200.pth",
 ):
     generator.load_state_dict(torch.load(generator_path, weights_only=True))
     discriminator.load_state_dict(torch.load(discriminator_path, weights_only=True))
